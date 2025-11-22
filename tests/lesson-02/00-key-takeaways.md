@@ -52,7 +52,7 @@
     - Commit file: git commit -m ”<message>” => `Làm mỗi khi có thay đổi`
     - Push code: git push origin main =>`Làm mỗi khi có thay đổi`
 
-![Hình ảnh](./image/Screenshot%202025-11-22%20at%2016.09.01.png)
+![Hình ảnh](./Image/flowstatus.png)
 
 - Đối với file trong folder: có 2 cách:
     - Git add folder/[tên file].txt
@@ -93,7 +93,7 @@
 feat: add code for exercises 2
 fix: fix automation for case 1”`
 ### Git -  Simple workflow:
-![Image](./image/Screenshot%202025-11-22%20at%2021.49.31.png)
+![Image](./Image/config.png)
 
 ## JAVASCRIPT BASIC
 ### JavaScript?
@@ -108,7 +108,7 @@ fix: fix automation for case 1”`
     - Firefox: SpiderMonkey
     - Chrome: V8
 - Khi chạy trên máy tính, chúng ta không có browser engine => cần công cụ khác để chạy => node.js
-![Image](./image/Screenshot%202025-11-22%20at%2021.51.52.png)
+![Image](./Image/flowstatus.png)
 
 
 ### Javascrip - Hello World:
@@ -266,7 +266,7 @@ let y = 2; // Lỗi: Identifier 'y' has already been declared
     - && (AND): trả về đúng nếu cả 2 vế của mệnh đề đúng
     - || (OR): trả về đúng nếu một trong 2 vế của mệnh đề đúng
 
-![Image](./image/Screenshot%202025-11-22%20at%2022.22.11.png)
+![Image](./Image/condition.png)
 
 ### Javascrip - Toán tử một ngôi:
 - Toán tử một ngôi là toán tử chỉ cần một toán hạng để thực hiện.
