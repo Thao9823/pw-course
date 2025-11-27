@@ -1,0 +1,5 @@
+Giải thích các câu lệnh:
+- git commit --amend là lệnh trong Git dùng để chỉnh sửa commit cuối cùng
+- git commit --amend -m "<message>": đặt nội dung message mới cho commit cuối
+- git restore --staged <file>: muốn bỏ 1 file cụ thể từ staging area => working directory
+- git reset HEAD~1: reset 1 commit

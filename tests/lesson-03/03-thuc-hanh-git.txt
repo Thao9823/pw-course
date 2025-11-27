@@ -1,0 +1,29 @@
+a. git init => khởi tạo 1 kho lưu trữ mới trong folder lesson-3
+- Working directory: chưa có gì 
+- Staging area: chưa có gì 
+- Repository: chưa có gì 
+
+b. tạo file:
+- Tạo file file1.txt nằm trong path: lesson-03/demo
+- Tạo file file2.txt nằm trong path: lesson-03/demo
+- Tạo file file3.txt nằm trong path: lesson-03/demo/oops
+- Working directory: file1.txt, file2.txt, file3.txt 
+- Staging area: chưa có gì 
+- Repository: chưa có gì 
+
+c. Thêm file .gitignore, thêm vào 2 dòng:
+i. file1.txt
+ii. oops/
+- Working directory: file1.txt, file2.txt, file3.txt 
+- Staging area: chưa có gì 
+- Repository: chưa có gì 
+
+d. Chạy lệnh: git add .
+- Working directory: file1.txt, file2.txt, file3.txt 
+- Staging area: file2.txt
+- Repository: chưa có gì 
+
+e. Chạy lệnh: git commit -m"init project"
+- Working directory: file1.txt, file2.txt, file3.txt 
+- Staging area: Trống
+- Repository: file2.txt
