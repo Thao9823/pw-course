@@ -7,7 +7,7 @@ test("Todo page", async ({ page }) => {
 
     //Thêm mới 100 todo item có nội dung “Todo <i>”
     for (let i = 1; i <= 100; i++) {
-        await page.locator("//input[@id='new-task']").fill("Todo " + `${i}`);
+        await page.locator("//input[@id='new-task']").fill("Todo " + i);
         await page.locator("//button[@id='add-task']").click();
     }
     // Xoá các todo có số lẻ
