@@ -51,7 +51,7 @@ async function addNote(page: Page, title: string, content: string) {
 
 test("Personal notes", async ({ page }) => {
     await page.goto("https://material.playwrightvn.com/");
-    
+
     // Di chuyển đến page Personal notes
     await page.click("//a[@href='04-xpath-personal-notes.html']");
 
@@ -59,4 +59,6 @@ test("Personal notes", async ({ page }) => {
     for (let i = 0; i < notes.length; i++) {
         await addNote(page, notes[i].title, notes[i].content);
     }
+    // Thực hiện search với keyword “một hoặc nhiều”
+    await page.locator('//input[@id="search"]').fill("một hoặc nhiều");
 })
