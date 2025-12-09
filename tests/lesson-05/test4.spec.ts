@@ -53,12 +53,19 @@ test("Personal notes", async ({ page }) => {
     await page.goto("https://material.playwrightvn.com/");
 
     // Di chuyển đến page Personal notes
-    await page.click("//a[@href='04-xpath-personal-notes.html']");
+    await test.step("Redirect to Personal Page", async () => {
+        await page.click("//a[@href='04-xpath-personal-notes.html']");
+    })
 
     // Thêm tất cả notes
-    for (let i = 0; i < notes.length; i++) {
-        await addNote(page, notes[i].title, notes[i].content);
-    }
+    await test.step("Add notes", async () => {
+        for (let i = 0; i < notes.length; i++) {
+            await addNote(page, notes[i].title, notes[i].content);
+        }
+    })
+
     // Thực hiện search với keyword “một hoặc nhiều”
-    await page.locator('//input[@id="search"]').fill("một hoặc nhiều");
+    await test.step("Search content", async () => {
+        await page.locator('//input[@id="search"]').fill("một hoặc nhiều");
+    })
 })
